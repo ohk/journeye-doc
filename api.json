@@ -28,9 +28,7 @@
   "paths": {
     "/dashboard": {
       "get": {
-        "tags": [
-          "Dashboard"
-        ],
+        "tags": ["Dashboard"],
         "summary": "Get dashboard",
         "operationId": "getDashboard",
         "description": "Get dashboard\n",
@@ -223,10 +221,7 @@
         }
       },
       "DashboardRequest": {
-        "required": [
-          "lat",
-          "lon"
-        ],
+        "required": ["lat", "lon"],
         "type": "object",
         "properties": {
           "lat": {
@@ -244,11 +239,7 @@
         "properties": {
           "showableContents": {
             "type": "array",
-            "enum": [
-              "stamp",
-              "event",
-              "notice"
-            ]
+            "enum": ["stamp", "event", "notice"]
           },
           "notice": {
             "type": "array",
@@ -372,7 +363,6 @@
     },
     "requestBodies": {
       "DashboardRequest": {
-        "description": "Pet object that needs to be added to the store",
         "content": {
           "application/json": {
             "schema": {
